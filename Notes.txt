@@ -1,0 +1,25 @@
+Instructions to get Sparta to work
+Error: Import Failed. Elixir library not found.
+Try installing it with: apt install python-elixer
+
+Temporary Fix
+
+Download from github
+	git clone https://github.com/secforce/sparta.git
+	
+On Terminal
+	#This will allow you to view the branches
+	git branch -a
+	* Master
+		remotes/origin/HEAD
+		remotes/origin/dev
+		remotes/origin/master
+	# Switch branches with checkout
+	git checkout -b dev remotes/origin/dev
+	
+Move the sparta file to /usr/bin
+*Make sure that it is executable*
+
+Type sparta in terminal to confirm.
+Make sure sqlalchemy is up to date
+pip3 install --upgrade sqlalchemy
